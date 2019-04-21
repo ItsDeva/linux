@@ -48,8 +48,8 @@ nautilus &
 ```sh
 crontab -e
 ```
-- Add this line at the bottom of the file
-- ```sh
+Add this line at the bottom of the file
+```sh
 @reboot /usr/bin/vncserver :1
 ```
 #adding Google Repo

@@ -14,6 +14,15 @@ Without Packages:
 ```sh
 sudo apt-get install --no-install-recommends ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
 ```
+- Adding settings manager
+```sh
+sudo apt-get install compizconfig-settings-manager
+export DISPLAY=:0
+ccsm
+###########If the above command is not working#########
+dconf reset -f /org/compiz/
+unity --reset-icons &disown
+```
 ### Lite version Desktop
 [Digital Ocean Lite Desktop Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04)
 - 

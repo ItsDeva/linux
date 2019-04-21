@@ -14,7 +14,7 @@ Without Packages:
 ```sh
 sudo apt-get install --no-install-recommends ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
 ```
-###Lite version Desktop
+### Lite version Desktop
 [Digital Ocean Lite Desktop Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04)
 - 
 # VNC Server Installation - Ubuntu Desktop
@@ -44,7 +44,7 @@ gnome-settings-daemon &
 metacity &
 nautilus &
 ```
-#CRON TAB for vncstartup
+# CRON TAB for vncstartup
 ```sh
 crontab -e
 ```
@@ -52,7 +52,7 @@ Add this line at the bottom of the file
 ```sh
 @reboot /usr/bin/vncserver :1
 ```
-#adding Google Repo
+# adding Google Repo
 ```sh
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
